@@ -1,6 +1,6 @@
 ---
-title: "Unlock Ferndale’s Best-Kept Secrets: 10 Must-Know Tips for Savvy Homebuyers"
-description: "Unlock Ferndale’s Best-Kept Secrets: 10 Must-Know Tips for Savvy Homebuyers"
+title: Unlock Ferndale’s Best-Kept Secrets 10 Must-Know Tips for Savvy Homebuyers
+description: Unlock Ferndale’s Best-Kept Secrets 10 Must-Know Tips for Savvy Homebuyers
 author: susie
 date: 2024-08-21T10:18:00.000Z
 tags:
