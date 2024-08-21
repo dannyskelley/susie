@@ -18,13 +18,9 @@ eleventyComputed:
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+    <picture style="text-align: center;">
+        <img style="margin: auto; display:block; max-width: 1200px;" src="{{ image }}" alt="{{ imageAlt }}" decoding="async" />
+    </picture>
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
@@ -41,27 +37,11 @@ eleventyComputed:
          
                 <!--Article Info-->
                 <div class="article-group">
-                    <h1 class="blog-h1">{{ title }}</h1>
+                    <h1 class="cs-title">{{ title }}</h1>
                            <!--Main Article Image-->
-                <picture class="blog-mainImage">
-                    <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
-                </picture>
+       
 
-                    <div class="blog-authorGroup">
-                        <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-                            src="/assets/svgs/profile.svg"
-                            alt="house"
-                            width="32"
-                            height="32"
-                            decoding="async">
-                        </picture>
-                        <span class="blog-author">{{ author }}</span>
-                        <span aria-hidden="true" class="blog-dot"></span>
-                        <!--Blog Date-->
-                        <span class="blog-date">{{ date | postDate }}</span>
-                    </div>
+                   
                 </div>
                 <section id="blog-content">
                     {{ content | safe }}
