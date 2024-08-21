@@ -1,5 +1,5 @@
 ---
-title: 10 Essential Tips for Homebuyers in Troy, Michigan
+title: 10 Essential Tips for Home buyers in Troy, Michigan
 description: Whether you’re searching for a family home, an upscale property, or
   a smart investment, Troy has something for everyone.
 author: susie
