@@ -1,5 +1,5 @@
 ---
-title: 10 Essential Tips for Homebuyers in Ferndale, Michigan
+title: 10 Essential Tips for Home buyers in Ferndale, Michigan
 description: Whether you’re a first-time buyer or a seasoned investor, finding
   the right home in Ferndale can be both thrilling and challenging. To ensure
   you’re making informed decisions and getting the most out of your Ferndale
