@@ -45,7 +45,6 @@
     color: var(--headerColor);
     text-align: inherit;
     font-family: "Syncopate", Arial, sans-serif;
-    font-display: swap;
     text-transform: uppercase;
   }
   .cs-text {
