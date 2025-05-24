@@ -666,6 +666,70 @@ body.scroll #cs-navigation .cs-logo img {
   display: flex;
 }
 }
+
+@media only screen and (min-width: 1088px) {
+  #cs-navigation .cs-ul ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform-origin: top center;
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1.5rem 1.5rem;
+    width: auto;
+    min-width: 500px;
+    max-width: 1100px;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  #cs-navigation .cs-dropdown:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scaleY(1);
+    z-index: 1000;
+  }
+
+  #cs-navigation .cs-drop-li {
+    opacity: 1 !important;
+    transform: none !important;
+    margin: 0;
+  }
+
+  #cs-navigation .cs-li-link.cs-drop-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--headerColor);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: none;
+    white-space: normal;
+    border-radius: 0.5rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  #cs-navigation .cs-li-link.cs-drop-link:hover,
+  #cs-navigation .cs-li-link.cs-drop-link:focus {
+    color: var(--primary);
+    background-color: rgba(0, 123, 255, 0.1); /* light blue background on hover */
+    outline: none;
+  }
+
+  #cs-navigation .cs-drop-icon {
+    display: none;
+  }
+}
+
                               
 </style>
 
@@ -693,11 +757,31 @@ body.scroll #cs-navigation .cs-logo img {
                     Home
                 </a>
             </li>
-          <li class="cs-li">
-            <a target="_blank" href="https://www.gkgrealty.com/agents/1902326/Susie+Sharak" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
-                Listings
-            </a>
-        </li>
+            <li class="cs-li cs-dropdown" tabindex="0">
+              <span class="cs-li-link cs-dropdown-toggle">
+                Areas Served
+                <img alt="dropdown icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" decoding="async" height="15" width="15" class="cs-drop-icon" aria-hidden="true">
+              </span>
+              <ul class="cs-drop-ul">
+                <li class="cs-drop-li cs-drop3-main"><a href="/macomb-real-estate" class="cs-li-link cs-drop-link">Macomb</a></li>
+               <!-- <li class="cs-drop-li cs-drop3-main"><a href="/shelby-township-real-estate" class="cs-li-link cs-drop-link">Shelby Township</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/sterling-heights-real-estate" class="cs-li-link cs-drop-link">Sterling Heights</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/clinton-township-real-estate" class="cs-li-link cs-drop-link">Clinton Township</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/west-bloomfield-real-estate" class="cs-li-link cs-drop-link">West Bloomfield</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/farmington-hills-real-estate" class="cs-li-link cs-drop-link">Farmington Hills</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/rochester-hills-real-estate" class="cs-li-link cs-drop-link">Rochester Hills</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/bloomfield-hills-real-estate" class="cs-li-link cs-drop-link">Bloomfield Hills</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/canton-real-estate" class="cs-li-link cs-drop-link">Canton</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/southfield-real-estate" class="cs-li-link cs-drop-link">Southfield</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/detroit-real-estate" class="cs-li-link cs-drop-link">Detroit</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/troy-real-estate" class="cs-li-link cs-drop-link">Troy</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/dearborn-real-estate" class="cs-li-link cs-drop-link">Dearborn</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/novi-real-estate" class="cs-li-link cs-drop-link">Novi</a></li>
+                <li class="cs-drop-li cs-drop3-main"><a href="/grosse-pointe-real-estate" class="cs-li-link cs-drop-link">Grosse Pointe</a></li>
+              --></ul>
+            </li>
+            
+            
 
         <li class="cs-li">
           <a target="_blank" href="https://www.zillow.com/profile/susiesharak" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
